@@ -1,0 +1,14 @@
+Bubble Association Validation Errors
+====================================
+
+Merge the validation errors from associations with validates_associated defined.
+
+Example
+=======
+
+class Blog < ActiveRecord::Base
+  has_many :posts
+  validates_associated :posts
+end
+
+Copyright (c) 2008 Nathan de Vries (http://www.atnan.com), released under the MIT license
